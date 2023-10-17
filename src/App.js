@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import ShowData from "./Components/ShowData";
+import StudentInput from "./Components/StudentInput";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [stuData, setStuData] = useState([]);
+    function fetchData(data) {
+        setStuData(data);
+    }
+    return (
+        <div className="App">
+            <Navbar />
+            <div className="main">
+                <StudentInput getData={fetchData} />
+                <ShowData viewData={stuData} />
+            </div>
+        </div>
+    );
 }
 
 export default App;
