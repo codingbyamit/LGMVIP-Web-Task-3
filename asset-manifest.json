@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LGMVIP-Web-Task-3/static/css/main.3a3cc2a7.css",
+    "main.js": "/LGMVIP-Web-Task-3/static/js/main.7727178e.js",
+    "index.html": "/LGMVIP-Web-Task-3/index.html",
+    "main.3a3cc2a7.css.map": "/LGMVIP-Web-Task-3/static/css/main.3a3cc2a7.css.map",
+    "main.7727178e.js.map": "/LGMVIP-Web-Task-3/static/js/main.7727178e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a3cc2a7.css",
+    "static/js/main.7727178e.js"
+  ]
+}
